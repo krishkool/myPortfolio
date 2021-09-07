@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    height: 15vh;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 .navbar-brand span{
+
+    font-size: 35px;
+    
+}
+
+
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+
+
+}
+.navbar ul li a{
+
+    text-decoration: none;
+    position: relative;
+
+}
+.navbar a{
+    color: white;
+    font-size: 15px;
+    font-family: 600;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 7px 18px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Navigation bar Menus Animation */
+
+.navbar a:hover{
+
+    color: #038a45;
+    transition: .3s ease-in-out;
+}
+
+.navbar ul li a:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transition: transform .5s;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.navbar ul li a:hover:after{
+    
+    transform: translateX(-50%) scaleX(1);
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transition: transform .5s;
+    
+
+}
+
+
+/*  About Section Styling Starts Here*/
+
+
+/* Name Logo Animation Starts Here  */
+
+
+.name-head .exp{
+        font-weight: 900;
+        font-size: 2.2rem;
+        color: rgb(78, 77, 77);
+        animation: animated 2s linear infinite;
+        
+      }
+@keyframes animated{
+
+    0% {
+        color: #333;
+        text-shadow: none;
+    }
+    100% {
+        color: #038a45;
+        text-shadow: 0 0 8px #038a45;
+    }
+}
+
+
+/* Name Logo Animation Ends Here */
+
+
+/* background image starts Here */
+
+.green{
+
+    background-image: url(./images/blocks.jpg);
+    /* opacity: 0.9; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: -2 !important;
+    display: flex;
+}
+
+/* background image starts Ends Here */
+
+.green::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* sticky Navigation */
+
+
+.nav.active{
+
+    background-color: #333;
+    box-shadow: 0 2px 10px #038a45;
+}
+
+.nav.nav.nav.active a{
+
+    color: #038a45;
+}
+
+.nav.nav.active .container{
+    padding: 10px 0;
+}
+
+
+
+h3.display-4.font-weight-bold{
+
+    padding-top: 3%;
+    font-size: 35px;
+}
+
+h3.display-3.font-weight-bold{
+
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+section{
+    padding: 5% 10%;
+    padding: .5rem;
+    min-height: 25vh;
+    
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 5% 10%;
+    background-color: #ebecee;
+    
+    
+}
+ 
+.about-me .image{
+    padding: 1rem;
+    flex: 1 1 40rem;
+    padding-right: 60%;
+    text-align: center;
+}
+.about-me .image img{
+    height: 20rem;
+    box-shadow: 0 .5rem 1rem #038a45;
+    border-top: .5rem solid rgb(56, 56, 56);
+    border-right: .5rem solid black;
+    border-bottom: .5rem solid green;
+    border-left: .5rem solid green;
+    border-radius: .5rem;
+}
+.about-me .content{
+    flex: 1 1 40rem;  
+    text-align: center;
+    padding: 0.1rem;  
+    
+}
+
+.about-me .content{
+
+    text-align: center;
+    box-shadow: 0 0 1rem #038a45;
+    margin-left: 500px;
+    margin-bottom: 200px;
+    border-top: .5rem solid green;
+    border-right: .5rem solid green;
+    border-bottom: .5rem solid black;
+    border-left: .5rem solid rgb(56, 56, 56);
+    border-radius: .5rem;
+
+}
+
+/*  About Section Styling Ends Here*/
+
+
+/*  Experiences Section Styling Starts Here*/
+
+
+.timeline-section{
+
+    background-color: #242424;
+    min-height: 100vh;
+    color: white;
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.timeline-items::before{
+
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: yellowgreen;
+    left: calc(50% - 1px);
+
+}
+
+.timeline-item{
+    background-color: #242424;
+    color: white;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.timeline-item:last-child {
+
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+
+        padding-right: calc(50% + 30px);
+        text-align: right;
+
+
+}
+
+.timeline-item:nth-child(even){
+
+    padding-left: calc(50% + 30px);
+
+
+}
+
+.timeline-content{
+
+    background-color: #ebecee;
+    padding: 30px;
+    color: #242424;
+    border-radius: 8px;
+    margin-top: 2%;
+}
+
+
+.timeline-dot{
+    
+    background-color: yellowgreen;
+    width: 15px;
+    height: 15px;
+    left: calc(50% - 8px);
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.timeline-date{
+    color: yellowgreen;
+    font-size: 16px;
+    font-family: cursive;
+    font-style: italic;
+}
+/*  Experiences Section Styling Ends Here*/
+
+
+/*  Projects Section Styling Starts Here*/
+
+#projects {
+
+    background-color: #ebecee;
+    min-height: 100vh;
+}
+
+
+/*  Projects Section Styling Ends Here*/
+
+/*  contacts Section Styling Ends Here*/
+
+footer{
+
+    
+    bottom: 0;
+    width: 100%;
+    background: #242424;
+    color: #ebecee;
+}
+
+.main-content {
+    display: flex;
+    color: #ebecee;
+    
+}
+
+.main-content .left {
+
+    flex-basis: 50%;
+    padding: 10px 20px;
+    
+}
+
+.left h2{
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: yellowgreen;
+    
+}
+
+.left .content {
+
+    margin: 20px 0 0 0;
+    position: relative;
+
+}
+
+
+
+.center .content .fas{
+    font-size: 1rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content {
+
+    margin: 20px 0 0 0;
+}
+
+
+.center .content .fas:hover{
+
+    color: yellowgreen;
+}
+
+.center .content .text {
+
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 10px;
+    
+}
+.center .content .phone {
+
+    margin: 10px 0;
+}
+.center h2{
+
+    padding-top: 3%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+.right h2 {
+
+    padding-top: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+.right .content {
+
+    margin: 20px 10px 0 0;
+}
+
+
+.right .content .msg {
+    margin-top: 10px;
+    
+}
+.right form .text {
+
+    font-size: 1rem;
+    margin-bottom: 2px;
+    color: #ebecee;
+
+}
+.right form input, .right form textarea {
+
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+    background: #151515;
+    border: 1px solid white;
+    color: #ebecee;
+    
+
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color:  yellowgreen;
+}
+.right .content form {
+    padding-right: 10px;
+    padding-top: 10px;
+} 
+.right form input {
+    height: 35px;
+    
+}
+
+.right form .btn {
+    margin-top: 10px;
+    
+}
+.right form .btn.btn-success {
+    
+    height: 45px;
+    width: 15rem;
+    border: 2px solid yellowgreen;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #151515;
+    
+
+}
+
+.right form .btn.btn.btn-success:hover {
+
+    background: yellowgreen;
+    position: relative;
+
+}
+
+.button center {
+    padding: 5%;
+    font-size: 0.9rem;
+    
+}
+
+
+.social {
+
+    margin: 5% 0 0 0;
+    text-align: center;
+}
+
+.social a{
+    padding: 0 25px;
+}
+
+.social a span {
+
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s;
+}
+.social a span:hover {
+
+    background: yellowgreen;
+}
+.bottom {
+
+    padding-top: 2%;
+    margin-top: 2%;
+    background: #333;
+}
+.bottom center {
+
+    padding-bottom: 2%;
+}
+.krish {
+    color: yellowgreen;
+}
+/*  Contacts Section Styling Ends Here*/
