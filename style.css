@@ -122,8 +122,8 @@ h1 .navbar-brand span{
         text-shadow: none;
     }
     100% {
-        color: #038a45;
-        text-shadow: 0 0 8px #038a45;
+        color: yellowgreen;
+        text-shadow: 0 0 5px #038a45;
     }
 }
 
@@ -215,6 +215,10 @@ section{
     background-color: #ebecee;
     
     
+}
+
+.content p{
+    text-align: center;
 }
  
 .about-me .image{
@@ -354,10 +358,15 @@ section{
     min-height: 100vh;
 }
 
+.projects-section .row{
+
+    padding-top: 5%;
+}
 
 /*  Projects Section Styling Ends Here*/
 
 /*  contacts Section Styling Ends Here*/
+
 
 footer{
 
