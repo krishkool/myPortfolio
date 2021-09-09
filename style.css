@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -136,7 +140,7 @@ h1 .navbar-brand span{
 .green{
 
     background-image: url(./images/blocks.jpg);
-    /* opacity: 0.9; */
+    opacity: 0.9;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -187,6 +191,7 @@ h3.display-4.font-weight-bold{
 
     padding-top: 3%;
     font-size: 35px;
+    letter-spacing: 5px;
 }
 
 h3.display-3.font-weight-bold{
@@ -194,7 +199,7 @@ h3.display-3.font-weight-bold{
     padding: 0;
     font-size: 35px;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 
@@ -203,6 +208,7 @@ section{
     padding: 5% 10%;
     padding: .5rem;
     min-height: 25vh;
+    
     
 }
 .about-me{
@@ -215,10 +221,12 @@ section{
     background-color: #ebecee;
     
     
+    
 }
 
 .content p{
-    text-align: center;
+    text-align: justify;
+    margin: 0 10px 10px 10px;
 }
  
 .about-me .image{
@@ -230,8 +238,8 @@ section{
 .about-me .image img{
     height: 20rem;
     box-shadow: 0 .5rem 1rem #038a45;
-    border-top: .5rem solid rgb(56, 56, 56);
-    border-right: .5rem solid black;
+    border-top: .5rem solid #242424;
+    border-right: .5rem solid #242424;
     border-bottom: .5rem solid green;
     border-left: .5rem solid green;
     border-radius: .5rem;
@@ -250,9 +258,9 @@ section{
     margin-left: 500px;
     margin-bottom: 200px;
     border-top: .5rem solid green;
-    border-right: .5rem solid green;
-    border-bottom: .5rem solid black;
-    border-left: .5rem solid rgb(56, 56, 56);
+    border-right: .5rem solid #242424;
+    border-bottom: .5rem solid #242424;
+    border-left: .5rem solid green;
     border-radius: .5rem;
 
 }
@@ -268,6 +276,7 @@ section{
     background-color: #242424;
     min-height: 100vh;
     color: white;
+    margin-top: 1.5%;
 }
 
 .timeline-items{
@@ -294,9 +303,8 @@ section{
 .timeline-item{
     background-color: #242424;
     color: white;
-    margin-bottom: 40px;
     width: 100%;
-    padding: 1rem;
+    padding: 2.5rem;
 
 }
 
@@ -356,6 +364,7 @@ section{
 
     background-color: #ebecee;
     min-height: 100vh;
+    margin-top: 1.5%;
 }
 
 .projects-section .row{
@@ -363,11 +372,37 @@ section{
     padding-top: 5%;
 }
 
+
+.card-body{
+    background: #242424;
+    height: 25vh;
+}
+
+.card-body p{
+
+    text-align: justify;
+}
+.card-title{
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    
+    color: yellowgreen;
+}
+.card-text{
+    color: #ebecee;
+    font-size: 14px;
+    
+
+}
 /*  Projects Section Styling Ends Here*/
 
 /*  contacts Section Styling Ends Here*/
 
-
+.contacts-section {
+     margin-top: 1%;
+}
 footer{
 
     
@@ -424,6 +459,10 @@ footer{
     margin: 20px 0 0 0;
 }
 
+.center {
+
+    width: 37%;
+}
 
 .center .content .fas:hover{
 
@@ -535,7 +574,7 @@ footer{
 
 .social {
 
-    margin: 5% 0 0 0;
+    margin: 5% 0 5% 0;
     text-align: center;
 }
 
@@ -571,5 +610,10 @@ footer{
 }
 .krish {
     color: yellowgreen;
+}
+
+.place span .text {
+
+    text-align: right;
 }
 /*  Contacts Section Styling Ends Here*/
